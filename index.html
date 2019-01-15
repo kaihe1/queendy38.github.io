@@ -1,0 +1,20 @@
+
+<html>
+<head>
+ 
+</head>
+<body>
+    <script>
+        var xmlhttp = new XMLHttpRequest(); //display json
+        xmlhttp.onreadystatechange = function(){ //i will do this when somthing is matched
+            if (this.readyState == 4 && this.status == 200) { //4 = ready 200=okay 44=error
+               var mydata = JSON.parse(this.responseText); //json will be saved as mydata
+               window.alert(mydata.bento[0].price);
+               
+                }                                                   
+        };
+        xmlhttp.open("GET","bento.json", true);
+        xmlhttp.send();
+        </script>
+</body>
+</html>
