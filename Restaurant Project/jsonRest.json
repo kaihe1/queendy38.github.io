@@ -1,0 +1,21 @@
+var food = [
+    {
+        "name": "Mapo Tofu",
+        "price": 12,
+        "descrtiption": "This is Mapo Tofu."
+    },
+    {
+        "name": "Won Ton Noodles",
+        "price": 10,
+        "descrtiption": "This is Won Ton Noodles."
+
+
+    },
+    {
+        "name": "Fried Rice",
+        "price": 17,
+        "descrtiption": "This is Fried Rice."
+
+    }
+
+]

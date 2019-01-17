@@ -1,0 +1,66 @@
+.title,
+.bottom {
+    background-color: white;
+    text-align: center;
+}
+
+div {
+    width: 48vw;
+    height: 40vh;
+    margin: 0.75px;
+
+
+}
+
+#left1,
+#left2,
+#left3 {
+    float: left;
+    background-color: lightcoral;
+
+}
+
+#right1,
+#right2,
+#right3 {
+    float: right;
+    background-color: lightblue;
+}
+
+#pic1,
+#pic2,
+#pic3 {
+     background-color: lightgray;
+    margin: 0;
+    font-size: 10vh;
+    /* no px */
+
+}
+
+input {
+    width: 25vw;
+    height: 15vh;
+    text-align: center;
+    font-size: 10vh;
+    margin: 5vh;
+
+
+}
+
+button {
+    float: right;
+    border-width: 0;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+#bottom {
+    width: 100%;
+    background-color: white;
+
+}
+
+#welcome {
+    width: 100vw;
+    height: 100vh;
+
+}
