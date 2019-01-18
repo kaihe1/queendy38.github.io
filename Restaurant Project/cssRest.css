@@ -64,3 +64,16 @@ button {
     height: 100vh;
 
 }
+#container{
+    max-width:75vw;
+    min-height:80vh;
+    background-color:grey;
+    margin-left:auto;
+    margin-right:auto;
+}
+#total{
+    max-width:75vw;
+    height:10vh;
+    background-color:lightyellow;
+
+}

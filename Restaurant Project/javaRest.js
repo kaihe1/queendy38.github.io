@@ -71,6 +71,10 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
                 document.getElementById('user3').value = ""; //claer value
             }
         }
+
+
+        //this is the begining of page two
+        
     }
 
 };
@@ -120,6 +124,4 @@ function checkout() { //jump to next page
     location.href = "Rest2.html";
 }
 
-//removing buttons
-//two layers
-//button or onkeypress
+
