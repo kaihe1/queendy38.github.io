@@ -15,6 +15,8 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var totalL3 = Number(localStorage.getItem("total3")); //get from box3
             var total = totalP + totalL2 + totalL3;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
+              window.alert(mydata.food[0].name + " x " + qty);
+                
             //document.getElementById('order1').innerHTML = mydata.food[0].name + " x " + qty;
         }
         user1.onkeypress = function () {
@@ -37,7 +39,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var totalL3 = Number(localStorage.getItem("total3")); //get from box3
             var total = totalP + totalL + totalL3;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
-            //document.getElementById('order1').innerHTML = mydata.food[1].name + " x " + qty;
+           window.alert(mydata.food[1].name + " x " + qty);
         }
         user2.onkeypress = function () {
             if (event.keyCode == 13) { //enter, activate function
@@ -58,7 +60,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var totalL2 = Number(localStorage.getItem("total2")); //get from box 2
             var total = totalL + totalP + totalL2;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
-            //document.getElementById('order1').innerHTML = mydata.food[2].name + " x " + qty;
+           window.alert(mydata.food[2].name + " x " + qty);
         }
         user3.onkeypress = function () {
             if (event.keyCode == 13) { //enter, activate
