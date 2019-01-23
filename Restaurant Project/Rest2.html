@@ -26,7 +26,14 @@
         if (Number(localStorage.getItem("total")) <= 0){
                 li.removeChild(liText);
         }
-          
+        var li2 = document.createElement('li');
+        var liText2 = document.createTextNode(localStorage.getItem("item2"));
+        li2.appendChild(liText2);
+        ul.appendChild(li2);
+
+        if (Number(localStorage.getItem("total2")) <= 0){
+                li2.removeChild(liText2);
+        }
      
      </script>
 

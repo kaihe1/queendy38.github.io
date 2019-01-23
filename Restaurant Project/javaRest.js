@@ -42,6 +42,8 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalP + totalL + totalL3;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
            window.alert(mydata.food[1].name + " x " + qty);
+           var itemList = (mydata.food[1].name + " x " + qty + " = $" + wonton);
+           localStorage.setItem("item2", itemList ); //set order summary to next page
         }
         user2.onkeypress = function () {
             if (event.keyCode == 13) { //enter, activate function
@@ -121,4 +123,5 @@ function checkout() { //jump to next page
 
 
 //transfer data to next page
+//keep number even when go back to the page
 //complete project
