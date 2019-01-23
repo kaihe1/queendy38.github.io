@@ -6,24 +6,43 @@
 
 <body>
         <h1 class="title">The Restaurant</h1>
-        <hr>
+      <a href="Restaurant.html">Home</a>   
+      <hr> 
+        
         <div id="container">
                 <h2 id="subtitle">Order Summary</h2>
            <ul id="list"></ul>
           
 
-                <div id="total"></div>
+                <div id="total">
+                        <h3> Tax: 4.712% </h3>
+                        <h3>Tip:</h3>
+                    
+                        <h2 id="totalPrice">Your total is:</h2>
+                </div>
 
-
+                        <button id="tip1">15%</button>
+                      <button id="tip2">20%</button>
+                      <button id="tip3">30%</button>
         </div>
      <script>
+        var total = Number(localStorage.getItem("total"));
+        var total2 = Number(localStorage.getItem("total2"));
+        var total3 = Number(localStorage.getItem("total3"));
+        var total4 = Number(localStorage.getItem("total4"));
+        var total5 = Number(localStorage.getItem("total5"));
+        var total6 = Number(localStorage.getItem("total6")); 
+        var totalFinal = total + total2 + total3;
+
+
+
         var ul = document.getElementById('list');
-        var li = document.createElement('li');
-        var liText = document.createTextNode(localStorage.getItem("item1"));
-        li.appendChild(liText);
-        ul.appendChild(li);
+        var li = document.createElement('li'); //create list
+        var liText = document.createTextNode(localStorage.getItem("item1")); //get info from previous page
+        li.appendChild(liText); //append text to li
+        ul.appendChild(li); //append li to ul
          
-        if (Number(localStorage.getItem("total")) <= 0){
+        if (total <= 0){ //if no order, remove li
                 li.removeChild(liText);
         }
         var li2 = document.createElement('li');
@@ -31,9 +50,20 @@
         li2.appendChild(liText2);
         ul.appendChild(li2);
 
-        if (Number(localStorage.getItem("total2")) <= 0){
+        if (total2 <= 0){
                 li2.removeChild(liText2);
         }
+        var li3 = document.createElement('li');
+        var liText3 = document.createTextNode(localStorage.getItem("item3"));
+        li3.appendChild(liText3);
+        ul.appendChild(li3);
+
+        if (total3 <= 0){
+                li3.removeChild(liText3);
+        }
+
+       
+        document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + totalFinal.toFixed(2) ;
      
      </script>
 

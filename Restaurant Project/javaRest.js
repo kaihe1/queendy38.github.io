@@ -65,6 +65,8 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalL + totalP + totalL2;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
            window.alert(mydata.food[2].name + " x " + qty);
+           var itemList = (mydata.food[2].name + " x " + qty + " = $" + friedrice);
+           localStorage.setItem("item3", itemList ); //set order summary to next page
         }
         user3.onkeypress = function () {
             if (event.keyCode == 13) { //enter, activate
@@ -83,6 +85,10 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
 };
 xmlhttp.open("GET", "jsonRest.json", true);
 xmlhttp.send();
+
+document.getElementById('user1').value = 0;
+document.getElementById('user2').value = 0;
+document.getElementById('user3').value = 0;
 
 localStorage.setItem("total", 0); //set price = 0
 localStorage.setItem("total2", 0);
@@ -120,7 +126,6 @@ left2.onmouseout = function () { //if onmouseout, make input hidden
 function checkout() { //jump to next page
     location.href = "Rest2.html";
 }
-
 
 //transfer data to next page
 //keep number even when go back to the page
