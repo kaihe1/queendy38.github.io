@@ -16,8 +16,12 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalP + totalL2 + totalL3;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
               window.alert(mydata.food[0].name + " x " + qty);
-                
-            //document.getElementById('order1').innerHTML = mydata.food[0].name + " x " + qty;
+            ////////////////////////////////////append li to page 2    
+            var ul = document.getElementsByTagName('ul')[0];
+            var li = document.createElement('li');
+            var liText = document.createTextNode(mydata.food[0].name + " x " + qty + " = " + mapo);
+            li.appendChild(liText);
+            ul.appendChild(li);
         }
         user1.onkeypress = function () {
             if (event.keyCode == 13) { //if press enter, activate function
@@ -73,8 +77,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
         }
 
 
-        //this is the begining of page two
-        
+       
     }
 
 };

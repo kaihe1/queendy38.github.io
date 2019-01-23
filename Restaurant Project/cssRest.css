@@ -75,5 +75,11 @@ button {
     max-width:75vw;
     height:10vh;
     background-color:lightyellow;
+    transform:translateY(70vh);
+    margin:0;
 
+}
+#subtitle{
+    text-align:center;
+    text-decoration: underline;
 }
