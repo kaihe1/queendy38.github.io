@@ -9,13 +9,27 @@
         <hr>
         <div id="container">
                 <h2 id="subtitle">Order Summary</h2>
-                <ul></ul>
+           <ul id="list"></ul>
+          
 
                 <div id="total"></div>
 
 
         </div>
-     <script src="javaRest.js"></script>
+     <script>
+        var ul = document.getElementById('list');
+        var li = document.createElement('li');
+        var liText = document.createTextNode(localStorage.getItem("item1"));
+        li.appendChild(liText);
+        ul.appendChild(li);
+         
+        if (Number(localStorage.getItem("total")) <= 0){
+                li.removeChild(liText);
+        }
+          
+     
+     </script>
+
 </body>
 
 </html>

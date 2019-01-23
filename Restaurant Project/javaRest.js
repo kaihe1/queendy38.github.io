@@ -10,18 +10,16 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var qty = document.getElementById('user1').value; //get quantity
             //display price at bottom with tax
             var totalP = (qty * 1.471) * mapo;
-            localStorage.setItem("total", totalP); //set item
+            localStorage.setItem("total", totalP); //set item, price with tax
             var totalL2 = Number(localStorage.getItem("total2")); //get from box2
             var totalL3 = Number(localStorage.getItem("total3")); //get from box3
             var total = totalP + totalL2 + totalL3;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
               window.alert(mydata.food[0].name + " x " + qty);
-            ////////////////////////////////////append li to page 2    
-            var ul = document.getElementsByTagName('ul')[0];
-            var li = document.createElement('li');
-            var liText = document.createTextNode(mydata.food[0].name + " x " + qty + " = " + mapo);
-            li.appendChild(liText);
-            ul.appendChild(li);
+              var itemList = (mydata.food[0].name + " x " + qty + " = $" + totalP);
+            localStorage.setItem("item1", itemList ); //set order summary to next page
+      
+           
         }
         user1.onkeypress = function () {
             if (event.keyCode == 13) { //if press enter, activate function
@@ -83,12 +81,6 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
 };
 xmlhttp.open("GET", "jsonRest.json", true);
 xmlhttp.send();
-
-
-
-document.getElementById('user1').value = 0; //set default qty = 0
-document.getElementById('user2').value = 0;
-document.getElementById('user3').value = 0;
 
 localStorage.setItem("total", 0); //set price = 0
 localStorage.setItem("total2", 0);
