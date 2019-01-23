@@ -16,7 +16,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalP + totalL2 + totalL3;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
               window.alert(mydata.food[0].name + " x " + qty);
-              var itemList = (mydata.food[0].name + " x " + qty + " = $" + totalP);
+              var itemList = (mydata.food[0].name + " x " + qty + " = $" + mapo);
             localStorage.setItem("item1", itemList ); //set order summary to next page
       
            
@@ -120,3 +120,5 @@ function checkout() { //jump to next page
 }
 
 
+//transfer data to next page
+//complete project
