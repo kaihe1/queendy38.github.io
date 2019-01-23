@@ -83,3 +83,8 @@ button {
     text-align:center;
     text-decoration: underline;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
