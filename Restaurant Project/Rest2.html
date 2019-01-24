@@ -21,9 +21,9 @@
                         <h2 id="totalPrice">Your total is:</h2>
                 </div>
                        
-                        <button id="tip1">15%</button> <!-- get tip from customer -->
+                        <button id="tip1">30%</button> <!-- get tip from customer -->
                       <button id="tip2">20%</button>
-                      <button id="tip3">30%</button> 
+                      <button id="tip3">15%</button> 
                       <h3>Tip:</h3>
         </div>
      <script>
@@ -63,8 +63,20 @@
                 li3.removeChild(liText3);
         }
 
-       
-        document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + totalFinal.toFixed(2) ;
+        document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + totalFinal.toFixed(2);
+
+        tip3.onclick = function(){
+               var newTotal = totalFinal * 1.15;
+               document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + newTotal.toFixed(2);
+        }
+        tip2.onclick = function(){
+               var newTotal = totalFinal * 1.20;
+               document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + newTotal.toFixed(2);
+        }
+        tip1.onclick = function(){
+               var newTotal = totalFinal * 1.30;
+               document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + newTotal.toFixed(2);
+        }
      
      </script>
 

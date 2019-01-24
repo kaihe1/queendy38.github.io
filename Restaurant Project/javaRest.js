@@ -77,6 +77,31 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
                 document.getElementById('user3').value = ""; //claer value
             }
         }
+        //function 4
+        function enter4() {
+            var qty = document.getElementById('user4').value; //get quantity
+            //display price at bottom with tax
+            var totalP = (qty * 1.471) * friedrice; //get price
+            localStorage.setItem("total3", totalP); //set item
+            var totalL = Number(localStorage.getItem("total")); //get from box1
+            var totalL2 = Number(localStorage.getItem("total2")); //get from box 2
+            var total = totalL + totalP + totalL2;
+            document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
+           window.alert(mydata.food[2].name + " x " + qty);
+           var itemList = (mydata.food[2].name + " x " + qty + " = $" + friedrice);
+           localStorage.setItem("item3", itemList ); //set order summary to next page
+        }
+        user3.onkeypress = function () {
+            if (event.keyCode == 13) { //enter, activate
+                enter3();
+            }
+            if (event.keyCode == 45) { //minus, display no minus
+                window.alert("don't put a negative");
+                document.getElementById('user3').value = ""; //claer value
+            }
+        }
+
+
 
 
        
