@@ -17,6 +17,11 @@
             "price": 17,
             "descrtiption": "This is Fried Rice."
     
+        },
+        {
+            "name": "Hai Nam Chicken Rice",
+            "price": 11,
+            "description": "This is Hai Nam Chicken Rice"
         }
     
     ]
