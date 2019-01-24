@@ -1,6 +1,5 @@
 {
-    "food" : [
-        {
+    "food": [{
             "name": "Mapo Tofu",
             "price": 12,
             "descrtiption": "This is Mapo Tofu."
@@ -9,20 +8,30 @@
             "name": "Won Ton Noodles",
             "price": 10,
             "descrtiption": "This is Won Ton Noodles."
-    
-    
+
+
         },
         {
             "name": "Fried Rice",
             "price": 17,
             "descrtiption": "This is Fried Rice."
-    
+
         },
         {
             "name": "Hai Nam Chicken Rice",
             "price": 11,
             "description": "This is Hai Nam Chicken Rice"
+        },
+        {
+            "name": "Curry Fish Ball",
+            "price": 5,
+            "description": "This is Curry Fish Ball"
+        },
+        {
+            "name": "Pho",
+            "price": 18,
+            "description": "This is Pho"
         }
-    
+
     ]
-    }
+}

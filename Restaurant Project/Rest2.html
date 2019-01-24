@@ -15,7 +15,7 @@
 
 
                 <div id="total">
-                        <h3> Tax: 4.712% </h3>
+                        <h3 id="tax"> Tax: 4.712% </h3>
 
 
                         <h2 id="totalPrice">Your total is:</h2>
@@ -33,8 +33,8 @@
                 var total4 = Number(localStorage.getItem("total4"));
                 var total5 = Number(localStorage.getItem("total5"));
                 var total6 = Number(localStorage.getItem("total6"));
-                var totalFinal = total + total2 + total3 + total4;
-
+                var totalFinal = total + total2 + total3 + total4 + total5 + total6;
+                var tax = totalFinal / 1.471;
                 var ul = document.getElementById('list');
 
                 var li = document.createElement('li'); //create list
@@ -71,7 +71,25 @@
                         li4.removeChild(liText4);
                 }
 
+                var li5 = document.createElement('li');
+                var liText5 = document.createTextNode(localStorage.getItem("item5"));
+                li5.appendChild(liText5);
+                ul.appendChild(li5);
+
+                if (total5 <= 0) {
+                        li5.removeChild(liText5);
+                }
+                var li6 = document.createElement('li');
+                var liText6 = document.createTextNode(localStorage.getItem("item6"));
+                li6.appendChild(liText6);
+                ul.appendChild(li6);
+
+                if (total6 <= 0) {
+                        li6.removeChild(liText6);
+                }
+
                 document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + totalFinal.toFixed(2); //display total cost
+                document.getElementById('tax').innerHTML = "Your tax is: $" + (tax * 0.471).toFixed(2); //get tax
 
                 tip3.onclick = function () { //calculate tip 15%
                         var newTotal = totalFinal * 1.15;

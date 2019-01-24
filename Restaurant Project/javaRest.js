@@ -6,6 +6,8 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
         var wonton = mydata.food[1].price;
         var friedrice = mydata.food[2].price;
         var haiNam = mydata.food[3].price;
+        var fishball = mydata.food[4].price;
+        var pho = mydata.food[5].price;
 
         function enter() {
             var qty = document.getElementById('user1').value; //get quantity
@@ -17,11 +19,11 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var totalL4 = Number(localStorage.getItem("total4")); //get from box4
             var total = totalP + totalL2 + totalL3 + totalL4;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
-              window.alert(mydata.food[0].name + " x " + qty);
-              var itemList = (mydata.food[0].name + " x " + qty + " = $" + mapo);
-            localStorage.setItem("item1", itemList ); //set order summary to next page
-      
-           
+            window.alert(mydata.food[0].name + " x " + qty);
+            var itemList = (mydata.food[0].name + " x " + qty + " = $" + mapo);
+            localStorage.setItem("item1", itemList); //set order summary to next page
+
+
         }
         user1.onkeypress = function () {
             if (event.keyCode == 13) { //if press enter, activate function
@@ -44,9 +46,9 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var totalL4 = Number(localStorage.getItem("total4")); //get from box4
             var total = totalP + totalL + totalL3 + totalL4;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
-           window.alert(mydata.food[1].name + " x " + qty);
-           var itemList = (mydata.food[1].name + " x " + qty + " = $" + wonton);
-           localStorage.setItem("item2", itemList ); //set order summary to next page
+            window.alert(mydata.food[1].name + " x " + qty);
+            var itemList = (mydata.food[1].name + " x " + qty + " = $" + wonton);
+            localStorage.setItem("item2", itemList); //set order summary to next page
         }
         user2.onkeypress = function () {
             if (event.keyCode == 13) { //enter, activate function
@@ -66,11 +68,11 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var totalL = Number(localStorage.getItem("total")); //get from box1
             var totalL2 = Number(localStorage.getItem("total2")); //get from box 2
             var totalL4 = Number(localStorage.getItem("total4")); //get from box 4
-            var total = totalL + totalP + totalL2 + totalL3 + totalL4;
+            var total = totalL + totalP + totalL2 + totalL4;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
-           window.alert(mydata.food[2].name + " x " + qty);
-           var itemList = (mydata.food[2].name + " x " + qty + " = $" + friedrice);
-           localStorage.setItem("item3", itemList ); //set order summary to next page
+            window.alert(mydata.food[2].name + " x " + qty);
+            var itemList = (mydata.food[2].name + " x " + qty + " = $" + friedrice);
+            localStorage.setItem("item3", itemList); //set order summary to next page
         }
         user3.onkeypress = function () {
             if (event.keyCode == 13) { //enter, activate
@@ -89,12 +91,13 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             localStorage.setItem("total4", totalP); //set item
             var totalL = Number(localStorage.getItem("total")); //get from box1
             var totalL2 = Number(localStorage.getItem("total2")); //get from box 2
-            var totalL3 = Number(localStorage.getItem("total3"));//get from box3
+            var totalL3 = Number(localStorage.getItem("total3")); //get from box3
             var total = totalL + totalP + totalL2 + totalL3;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
-           window.alert(mydata.food[3].name + " x " + qty);
-           var itemList = (mydata.food[3].name + " x " + qty + " = $" + friedrice);
-           localStorage.setItem("item4", itemList ); //set order summary to next page
+            window.alert(mydata.food[3].name + " x " + qty);
+            var itemList = (mydata.food[3].name + " x " + qty + " = $" + haiNam);
+            localStorage.setItem("item4", itemList); //set order summary to next page
+
         }
         user4.onkeypress = function () {
             if (event.keyCode == 13) { //enter, activate
@@ -105,11 +108,64 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
                 document.getElementById('user4').value = ""; //claer value
             }
         }
+        //function 5
+        function enter5() {
+            var qty = document.getElementById('user5').value; //get quantity
+            //display price at bottom with tax
+            var totalP = (qty * 1.471) * fishball; //get price
+            localStorage.setItem("total5", totalP); //set item
+            var totalL = Number(localStorage.getItem("total")); //get from box1
+            var totalL2 = Number(localStorage.getItem("total2")); //get from box 2
+            var totalL3 = Number(localStorage.getItem("total3")); //get from box3
+            var totalL4 = Number(localStorage.getItem("total4")); //get from box4
+            var total = totalL + totalP + totalL2 + totalL3 + totalL4;
+            document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
+            window.alert(mydata.food[4].name + " x " + qty);
+            var itemList = (mydata.food[4].name + " x " + qty + " = $" + fishball);
+            localStorage.setItem("item5", itemList); //set order summary to next page
+
+        }
+        user5.onkeypress = function () {
+            if (event.keyCode == 13) { //enter, activate
+                enter5();
+            }
+            if (event.keyCode == 45) { //minus, display no minus
+                window.alert("don't put a negative");
+                document.getElementById('user5').value = ""; //claer value
+            }
+        }
+        //function6
+        function enter6() {
+            var qty = document.getElementById('user6').value; //get quantity
+            //display price at bottom with tax
+            var totalP = (qty * 1.471) * pho; //get price
+            localStorage.setItem("total6", totalP); //set item
+            var totalL = Number(localStorage.getItem("total")); //get from box1
+            var totalL2 = Number(localStorage.getItem("total2")); //get from box 2
+            var totalL3 = Number(localStorage.getItem("total3")); //get from box3
+            var totalL4 = Number(localStorage.getItem("total4")); //get from box4
+            var totalL5 = Number(localStorage.getItem("total4")); //get from box5
+            var total = totalL + totalP + totalL2 + totalL3 + totalL4 + totalL5;
+            document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
+            window.alert(mydata.food[5].name + " x " + qty);
+            var itemList = (mydata.food[5].name + " x " + qty + " = $" + pho);
+            localStorage.setItem("item6", itemList); //set order summary to next page
+
+        }
+        user6.onkeypress = function () {
+            if (event.keyCode == 13) { //enter, activate
+                enter6();
+            }
+            if (event.keyCode == 45) { //minus, display no minus
+                window.alert("don't put a negative");
+                document.getElementById('user6').value = ""; //claer value
+            }
+        }
 
 
 
 
-       
+
     }
 
 };
@@ -120,17 +176,20 @@ document.getElementById('user1').value = 0;
 document.getElementById('user2').value = 0;
 document.getElementById('user3').value = 0;
 document.getElementById('user4').value = 0;
+document.getElementById('user5').value = 0;
 
 
 localStorage.setItem("total", 0); //set price = 0
 localStorage.setItem("total2", 0);
 localStorage.setItem("total3", 0);
 localStorage.setItem("total4", 0);
+localStorage.setItem("total5", 0);
 
 document.getElementById('pic1').style.visibility = "hidden"; //input box hidden
 document.getElementById('pic2').style.visibility = "hidden";
 document.getElementById('pic3').style.visibility = "hidden";
 document.getElementById('pic4').style.visibility = "hidden";
+document.getElementById('pic5').style.visibility = "hidden";
 
 
 left1.onmouseover = function () { //if mouseover, display input
@@ -163,6 +222,13 @@ right2.onmouseout = function () { //if onmouseout, make input hidden
     document.getElementById('pic4').style.visibility = "hidden";
 }
 
+left3.onmouseover = function () { //if mouseover, make input visible
+    document.getElementById('pic5').style.visibility = "visible";
+}
+left3.onmouseout = function () { //if onmouseout, make input hidden
+    document.getElementById('pic5').style.visibility = "hidden";
+}
+
 
 function checkout() { //jump to next page
     location.href = "Rest2.html";
@@ -171,3 +237,4 @@ function checkout() { //jump to next page
 //transfer data to next page
 //keep number even when go back to the page
 //complete project
+//divide total by tax and display both before tax and
