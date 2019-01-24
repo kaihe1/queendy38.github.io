@@ -14,7 +14,8 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             localStorage.setItem("total", totalP); //set item, price with tax
             var totalL2 = Number(localStorage.getItem("total2")); //get from box2
             var totalL3 = Number(localStorage.getItem("total3")); //get from box3
-            var total = totalP + totalL2 + totalL3;
+            var totalL4 = Number(localStorage.getItem("total4")); //get from box4
+            var total = totalP + totalL2 + totalL3 + totalL4;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
               window.alert(mydata.food[0].name + " x " + qty);
               var itemList = (mydata.food[0].name + " x " + qty + " = $" + mapo);
@@ -40,7 +41,8 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             localStorage.setItem("total2", totalP); //set item
             var totalL = Number(localStorage.getItem("total")); //get price from box1
             var totalL3 = Number(localStorage.getItem("total3")); //get from box3
-            var total = totalP + totalL + totalL3;
+            var totalL4 = Number(localStorage.getItem("total4")); //get from box4
+            var total = totalP + totalL + totalL3 + totalL4;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
            window.alert(mydata.food[1].name + " x " + qty);
            var itemList = (mydata.food[1].name + " x " + qty + " = $" + wonton);
@@ -63,7 +65,8 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             localStorage.setItem("total3", totalP); //set item
             var totalL = Number(localStorage.getItem("total")); //get from box1
             var totalL2 = Number(localStorage.getItem("total2")); //get from box 2
-            var total = totalL + totalP + totalL2;
+            var totalL4 = Number(localStorage.getItem("total4")); //get from box 4
+            var total = totalL + totalP + totalL2 + totalL3 + totalL4;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
            window.alert(mydata.food[2].name + " x " + qty);
            var itemList = (mydata.food[2].name + " x " + qty + " = $" + friedrice);
