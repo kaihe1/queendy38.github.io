@@ -191,7 +191,8 @@ document.getElementById('hainam').innerHTML = haiNamName + " - $" + haiNam;
 document.getElementById('fishball').innerHTML = fishballName + " - $" + fishball;
 document.getElementById('pho').innerHTML = phoName + " - $" + pho;
 
-//create a "maneger secet link" that allows the manipulation of piece or mark the item as Sold Out
+//****create a "maneger secet link" that allows the manipulation of piece or mark the item as Sold Out
+//find new photo for first two boxes
 
 
 
