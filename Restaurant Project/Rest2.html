@@ -93,16 +93,18 @@
 
                 tip3.onclick = function () { //calculate tip 15%
                         var newTotal = totalFinal * 1.15;
-                        document.getElementById('totalPrice').innerHTML = "Total Cost : $ " + newTotal.toFixed(
-                                2);
                         document.getElementById('container').style.visibility = "hidden";
                         document.getElementById('thankYou').innerHTML = "Thank You!";
+                        window.alert("Total Cost : $ " + newTotal.toFixed(2));
+                        
                 }
+                //copy from tip3
                 tip2.onclick = function () { //calculate tip 20%
                         var newTotal = totalFinal * 1.20;
                         document.getElementById('totalPrice').innerHTML = "Total Cost : $ " + newTotal.toFixed(
                                 2);
                 }
+                //copy from tip3
                 tip1.onclick = function () { //calculate tip 30%
                         var newTotal = totalFinal * 1.30;
                         document.getElementById('totalPrice').innerHTML = "Total Cost : $ " + newTotal.toFixed(

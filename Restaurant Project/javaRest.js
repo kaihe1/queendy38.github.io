@@ -190,7 +190,8 @@ document.getElementById('friedrice').innerHTML = friedriceName + " - $" + friedr
 document.getElementById('hainam').innerHTML = haiNamName + " - $" + haiNam;
 document.getElementById('fishball').innerHTML = fishballName + " - $" + fishball;
 document.getElementById('pho').innerHTML = phoName + " - $" + pho;
-//show desctiption of items
+
+//create a "maneger secet link" that allows the manipulation of piece or mark the item as Sold Out
 
 
 
