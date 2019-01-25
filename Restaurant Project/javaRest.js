@@ -22,7 +22,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalP + totalL2 + totalL3 + totalL4 + totalL5 + totalL6;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
             window.alert(mydata.food[0].name + " x " + qty);
-            var itemList = (mydata.food[0].name + " x " + qty + " = $" + mapo);
+            var itemList = (mydata.food[0].name + " x " + qty + " = $" + mapo * qty);
             localStorage.setItem("item1", itemList); //set order summary to next page
 
 
@@ -51,7 +51,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalP + totalL + totalL3 + totalL4 + totalL5 + totalL6;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
             window.alert(mydata.food[1].name + " x " + qty);
-            var itemList = (mydata.food[1].name + " x " + qty + " = $" + wonton);
+            var itemList = (mydata.food[1].name + " x " + qty + " = $" + wonton * qty);
             localStorage.setItem("item2", itemList); //set order summary to next page
         }
         user2.onkeypress = function () {
@@ -77,7 +77,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalL + totalP + totalL2 + totalL4 + totalL5 + totalL6;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
             window.alert(mydata.food[2].name + " x " + qty);
-            var itemList = (mydata.food[2].name + " x " + qty + " = $" + friedrice);
+            var itemList = (mydata.food[2].name + " x " + qty + " = $" + friedrice * qty);
             localStorage.setItem("item3", itemList); //set order summary to next page
         }
         user3.onkeypress = function () {
@@ -103,7 +103,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalL + totalP + totalL2 + totalL3 + totalL5 + totalL6;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
             window.alert(mydata.food[3].name + " x " + qty);
-            var itemList = (mydata.food[3].name + " x " + qty + " = $" + haiNam);
+            var itemList = (mydata.food[3].name + " x " + qty + " = $" + haiNam * qty);
             localStorage.setItem("item4", itemList); //set order summary to next page
 
         }
@@ -130,7 +130,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalL + totalP + totalL2 + totalL3 + totalL4 + totalL6;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
             window.alert(mydata.food[4].name + " x " + qty);
-            var itemList = (mydata.food[4].name + " x " + qty + " = $" + fishball);
+            var itemList = (mydata.food[4].name + " x " + qty + " = $" + fishball * qty);
             localStorage.setItem("item5", itemList); //set order summary to next page
 
         }
@@ -157,7 +157,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
             var total = totalL + totalP + totalL2 + totalL3 + totalL4 + totalL5;
             document.getElementById('bottom').innerHTML = "Your total is $" + total.toFixed(2);
             window.alert(mydata.food[5].name + " x " + qty);
-            var itemList = (mydata.food[5].name + " x " + qty + " = $" + pho);
+            var itemList = (mydata.food[5].name + " x " + qty + " = $" + pho * qty);
             localStorage.setItem("item6", itemList); //set order summary to next page
 
         }
