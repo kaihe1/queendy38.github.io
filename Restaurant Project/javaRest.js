@@ -189,12 +189,12 @@ document.getElementById('user5').value = 0;
 document.getElementById('user6').value = 0;
 
 
-//localStorage.setItem("total", 0); //set price = 0
-//localStorage.setItem("total2", 0);
-//localStorage.setItem("total3", 0);
-//localStorage.setItem("total4", 0);
-//localStorage.setItem("total5", 0);
-//localStorage.setItem("total6", 0);
+localStorage.setItem("total", 0); //set price = 0
+localStorage.setItem("total2", 0);
+localStorage.setItem("total3", 0);
+localStorage.setItem("total4", 0);
+localStorage.setItem("total5", 0);
+localStorage.setItem("total6", 0);
 
 document.getElementById('pic1').style.visibility = "hidden"; //input box hidden
 document.getElementById('pic2').style.visibility = "hidden";
