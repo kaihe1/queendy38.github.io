@@ -71,13 +71,15 @@ button {
 
 #container {
     max-width: 75vw;
-    min-height: 80vh;
+    min-height: 100vh;
     background-color: grey;
     margin-left: auto;
     margin-right: auto;
     border-width:3px;
     border-style: outset;
     border-color:black;
+   
+  
 }
 
 #total {
@@ -118,11 +120,6 @@ ul {
     background-size: cover;
 }
 
-#totalPrice {
-    text-align: center;
-
-}
-
 a {
     text-decoration-line: none;
     color: black;
@@ -159,4 +156,8 @@ h2{
 #thankYou{
     text-align:center;
     font-size: 10vh;
+}
+
+#totalPrice, #tax{
+    text-align: center;
 }
