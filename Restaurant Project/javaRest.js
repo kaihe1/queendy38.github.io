@@ -177,19 +177,22 @@ document.getElementById('user2').value = 0;
 document.getElementById('user3').value = 0;
 document.getElementById('user4').value = 0;
 document.getElementById('user5').value = 0;
+document.getElementById('user6').value = 0;
 
 
-localStorage.setItem("total", 0); //set price = 0
-localStorage.setItem("total2", 0);
-localStorage.setItem("total3", 0);
-localStorage.setItem("total4", 0);
-localStorage.setItem("total5", 0);
+//localStorage.setItem("total", 0); //set price = 0
+//localStorage.setItem("total2", 0);
+//localStorage.setItem("total3", 0);
+//localStorage.setItem("total4", 0);
+//localStorage.setItem("total5", 0);
+//localStorage.setItem("total6", 0);
 
 document.getElementById('pic1').style.visibility = "hidden"; //input box hidden
 document.getElementById('pic2').style.visibility = "hidden";
 document.getElementById('pic3').style.visibility = "hidden";
 document.getElementById('pic4').style.visibility = "hidden";
 document.getElementById('pic5').style.visibility = "hidden";
+document.getElementById('pic6').style.visibility = "hidden";
 
 
 left1.onmouseover = function () { //if mouseover, display input
@@ -229,12 +232,16 @@ left3.onmouseout = function () { //if onmouseout, make input hidden
     document.getElementById('pic5').style.visibility = "hidden";
 }
 
+right3.onmouseover = function () { //if mouseover, make input visible
+    document.getElementById('pic6').style.visibility = "visible";
+}
+right3.onmouseout = function () { //if onmouseout, make input hidden
+    document.getElementById('pic6').style.visibility = "hidden";
+}
+
 
 function checkout() { //jump to next page
     location.href = "Rest2.html";
 }
 
-//transfer data to next page
-//keep number even when go back to the page
-//complete project
-//divide total by tax and display both before tax and
+//error with suntracting item
