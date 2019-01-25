@@ -2,35 +2,35 @@
     "food": [{
             "name": "Mapo Tofu",
             "price": 12,
-            "descrtiption": "This is Mapo Tofu."
+            "description": "Spicy, Salty, Soft tofu"
         },
         {
             "name": "Won Ton Noodles",
             "price": 10,
-            "descrtiption": "This is Won Ton Noodles."
+            "description": "Handmade Noodle, Fresh Shrimp & Pork Wonton"
 
 
         },
         {
             "name": "Fried Rice",
             "price": 17,
-            "descrtiption": "This is Fried Rice."
+            "description": "Peas, Carrots, Eggs, Spam, Hot Sauce"
 
         },
         {
             "name": "Hai Nam Chicken Rice",
             "price": 11,
-            "description": "This is Hai Nam Chicken Rice"
+            "description": "Garlic, Ginger, White Chicken, Flavored Rice"
         },
         {
             "name": "Curry Fish Ball",
             "price": 5,
-            "description": "This is Curry Fish Ball"
+            "description": "Fried Fish Ball, Homemade Curry"
         },
         {
             "name": "Pho",
             "price": 18,
-            "description": "This is Pho"
+            "description": "Beef Broth, Thin Noodles"
         }
 
     ]
