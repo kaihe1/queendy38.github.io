@@ -29,16 +29,21 @@ div {
 
 #pic1,
 #pic2,
-#pic3 {
+#pic3,
+#pic4,
+#pic5,
+#pic6 {
     margin: 0;
     font-size: 10vh;
+    background-color: rgba(255, 255, 255, 0.233);
+   
     /* no px */
 
 }
 
 input {
-    width: 25vw;
-    height: 15vh;
+    width: 20vw;
+    height: 10vh;
     text-align: center;
     font-size: 10vh;
     margin: 5vh;
@@ -70,6 +75,9 @@ button {
     background-color: grey;
     margin-left: auto;
     margin-right: auto;
+    border-width:3px;
+    border-style: outset;
+    border-color:black;
 }
 
 #total {
@@ -144,4 +152,11 @@ a {
     background-position: center;
     background-size: cover;
 
+}
+h2{
+    background-color: rgba(255, 255, 255, 0.233);
+}
+#thankYou{
+    text-align:center;
+    font-size: 10vh;
 }

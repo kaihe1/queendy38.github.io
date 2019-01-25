@@ -8,7 +8,7 @@
         <h1 class="title">The Restaurant</h1>
         <a href="Restaurant.html">Home</a>
         <hr>
-
+        <h1 id="thankYou"></h1>
         <div id="container">
                 <h2 id="subtitle">Order Summary</h2>
                 <ul id="list"></ul>
@@ -88,22 +88,24 @@
                         li6.removeChild(liText6);
                 }
 
-                document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + totalFinal.toFixed(2); //display total cost
+                document.getElementById('totalPrice').innerHTML = "Total Cost : $ " + totalFinal.toFixed(2); //display total cost
                 document.getElementById('tax').innerHTML = "Your tax is: $" + (tax * 0.471).toFixed(2); //get tax
 
                 tip3.onclick = function () { //calculate tip 15%
                         var newTotal = totalFinal * 1.15;
-                        document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + newTotal.toFixed(
+                        document.getElementById('totalPrice').innerHTML = "Total Cost : $ " + newTotal.toFixed(
                                 2);
+                        document.getElementById('container').style.visibility = "hidden";
+                        document.getElementById('thankYou').innerHTML = "Thank You!";
                 }
                 tip2.onclick = function () { //calculate tip 20%
                         var newTotal = totalFinal * 1.20;
-                        document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + newTotal.toFixed(
+                        document.getElementById('totalPrice').innerHTML = "Total Cost : $ " + newTotal.toFixed(
                                 2);
                 }
                 tip1.onclick = function () { //calculate tip 30%
                         var newTotal = totalFinal * 1.30;
-                        document.getElementById('totalPrice').innerHTML = "Total Cost = $ " + newTotal.toFixed(
+                        document.getElementById('totalPrice').innerHTML = "Total Cost : $ " + newTotal.toFixed(
                                 2);
                 }
         </script>
