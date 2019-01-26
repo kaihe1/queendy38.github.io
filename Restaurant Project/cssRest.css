@@ -2,6 +2,7 @@
 .bottom {
     background-color: white;
     text-align: center;
+   
 }
 
 div {
@@ -55,6 +56,8 @@ button {
     float: right;
     border-width: 0;
     background-color: rgba(255, 0, 0, 0);
+    font-size: 3vh;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #bottom {

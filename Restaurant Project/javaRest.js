@@ -4,6 +4,7 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
         var mydata = JSON.parse(this.responseText); //json will be saved as mydata
         var mapo = mydata.food[0].price; //get price
         var mapoName = mydata.food[0].name; //get name
+        localStorage.setItem("food1", mydata.food[0].name);
       
 
         var wonton = mydata.food[1].price; //get price
@@ -192,7 +193,7 @@ document.getElementById('fishball').innerHTML = fishballName + " - $" + fishball
 document.getElementById('pho').innerHTML = phoName + " - $" + pho;
 
 //****create a "maneger secet link" that allows the manipulation of piece or mark the item as Sold Out
-//find new photo for first two boxes
+//make the button bigger
 
 
 
@@ -269,9 +270,12 @@ right3.onmouseout = function () { //if onmouseout, make input hidden
     document.getElementById('pic6').style.visibility = "hidden";
 }
 
-
+title.onclick = function(){
+    location.href ="secretLink.html";
+}
 function checkout() { //jump to next page
     location.href = "Rest2.html";
 }
 
-//error with suntracting item
+
+//try to make sold out sign
