@@ -274,7 +274,7 @@ function checkout() { //jump to next page
     location.href = "Rest2.html";
 }
 
-left1.ondblclick = function(){
+left1.ondblclick = function(){ //enter password to make box disappear
     var password = prompt("Enter password");
     if (password == 1234){
         left1.style.visibility = "hidden";
@@ -283,14 +283,13 @@ left1.ondblclick = function(){
          window.alert("Wrong password"); 
      }
 }
-left1.onkeypress = function(){
-    if (event.keyCode == 13) {
-
-  
+title.onclick = function(){ //enter password to make box appear again
     var password = prompt("Enter password");
     if (password == 1234){
         left1.style.visibility = "visible";
      }
+      else{
+          window.alert("Wrong password");
       }
 }
 //try to make sold out sign
