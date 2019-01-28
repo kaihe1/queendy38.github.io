@@ -194,6 +194,28 @@ document.getElementById('pho').innerHTML = phoName + " - $" + pho;
 
 //****create a "maneger secet link" that allows the manipulation of piece or mark the item as Sold Out
 //make the button bigger
+left1.ondblclick = function(){ //enter password to make box disappear
+    var password = prompt("Enter password");
+    if (password == "item1") {
+        user1.style.visibility = "hidden";
+        document.getElementById('mapo').innerHTML = "Sold Out";
+     }
+     else{
+         window.alert("Wrong password"); 
+     }
+}
+title.onclick = function(){ //enter password to make box appear again
+    var password = prompt("Enter password");
+    if (password == "item1") {
+        user1.style.visibility = "visible";
+        document.getElementById('mapo').innerHTML = mapoName + " - $" + mapo; 
+     }
+      else{
+          window.alert("Wrong password");
+      }
+}
+//try to make sold out sign
+
 
 
 
@@ -273,24 +295,4 @@ right3.onmouseout = function () { //if onmouseout, make input hidden
 function checkout() { //jump to next page
     location.href = "Rest2.html";
 }
-
-left1.ondblclick = function(){ //enter password to make box disappear
-    var password = prompt("Enter password");
-    if (password == 1234){
-        left1.style.visibility = "hidden";
-     }
-     else{
-         window.alert("Wrong password"); 
-     }
-}
-title.onclick = function(){ //enter password to make box appear again
-    var password = prompt("Enter password");
-    if (password == 1234){
-        left1.style.visibility = "visible";
-     }
-      else{
-          window.alert("Wrong password");
-      }
-}
-//try to make sold out sign
 
