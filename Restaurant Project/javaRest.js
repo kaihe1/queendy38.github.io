@@ -204,15 +204,83 @@ document.getElementById('mapo').onclick = function(){ //enter password to make b
          window.alert("Wrong password"); 
      }
 }
+document.getElementById('wonton').onclick = function(){ //enter password to make box disappear
+    var password = prompt("Enter password");
+    if (password == "item2") {
+        user2.style.visibility = "hidden";
+        document.getElementById('wonton').innerHTML = "Sold Out";
+     }
+     else{
+         window.alert("Wrong password"); 
+     }
+}
+document.getElementById('friedrice').onclick = function(){ //enter password to make box disappear
+    var password = prompt("Enter password");
+    if (password == "item3") {
+        user3.style.visibility = "hidden";
+        document.getElementById('friedrice').innerHTML = "Sold Out";
+     }
+     else{
+         window.alert("Wrong password"); 
+     }
+}
+document.getElementById('hainam').onclick = function(){ //enter password to make box disappear
+    var password = prompt("Enter password");
+    if (password == "item4") {
+        user4.style.visibility = "hidden";
+        document.getElementById('hainam').innerHTML = "Sold Out";
+     }
+     else{
+         window.alert("Wrong password"); 
+     }
+}
+document.getElementById('fishball').onclick = function(){ //enter password to make box disappear
+    var password = prompt("Enter password");
+    if (password == "item5") {
+        user5.style.visibility = "hidden";
+        document.getElementById('fishball').innerHTML = "Sold Out";
+     }
+     else{
+         window.alert("Wrong password"); 
+     }
+}
+document.getElementById('pho').onclick = function(){ //enter password to make box disappear
+    var password = prompt("Enter password");
+    if (password == "item6") {
+        user6.style.visibility = "hidden";
+        document.getElementById('pho').innerHTML = "Sold Out";
+     }
+     else{
+         window.alert("Wrong password"); 
+     }
+}
 title.onclick = function(){ //enter password to make box appear again
     var password = prompt("Enter password");
     if (password == "item1") {
         user1.style.visibility = "visible";
         document.getElementById('mapo').innerHTML = mapoName + " - $" + mapo; 
      }
-      else{
-          window.alert("Wrong password");
-      }
+     if (password == "item2") {
+        user2.style.visibility = "visible";
+        document.getElementById('wonton').innerHTML = mapoName + " - $" + wonton; 
+     }
+     if (password == "item3") {
+        user3.style.visibility = "visible";
+        document.getElementById('friedrice').innerHTML = mapoName + " - $" + friedrice; 
+     }
+     if (password == "item4") {
+        user4.style.visibility = "visible";
+        document.getElementById('hainam').innerHTML = mapoName + " - $" + haiNam; 
+     }
+     if (password == "item5") {
+        user5.style.visibility = "visible";
+        document.getElementById('fishball').innerHTML = mapoName + " - $" + fishball; 
+     }
+     if (password == "item6") {
+        user6.style.visibility = "visible";
+        document.getElementById('pho').innerHTML = mapoName + " - $" + pho; 
+     }
+     
 }
 //try to make sold out sign
 
