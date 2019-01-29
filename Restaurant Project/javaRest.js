@@ -194,7 +194,7 @@ document.getElementById('pho').innerHTML = phoName + " - $" + pho;
 
 //****create a "maneger secet link" that allows the manipulation of piece or mark the item as Sold Out
 //make the button bigger
-left1.ondblclick = function(){ //enter password to make box disappear
+document.getElementById('mapo').onclick = function(){ //enter password to make box disappear
     var password = prompt("Enter password");
     if (password == "item1") {
         user1.style.visibility = "hidden";
@@ -295,9 +295,9 @@ right3.onmouseout = function () { //if onmouseout, make input hidden
 function checkout() { //jump to next page
     location.href = "Rest2.html";
 }
-var previous = null;
+var previous = null; 
 var current = null;
-    setInterval(function(){
+    setInterval(function(){ //auto refresh
         $.getJSON("json.Rest.json", function(json){
             current = JSON.stringify(json);
             if (previous && current && previous!==current){
