@@ -197,8 +197,8 @@ document.getElementById('pho').innerHTML = phoName + " - $" + pho;
 document.getElementById('mapo').onclick = function(){ //enter password to make box disappear
     var password = prompt("Enter password");
     if (password == "item1") {
-        user1.style.visibility = "hidden";
-        document.getElementById('mapo').innerHTML = "Sold Out";
+        left1.style.visibility = "hidden";
+        
      }
      else{
          window.alert("Wrong password"); 
@@ -207,8 +207,7 @@ document.getElementById('mapo').onclick = function(){ //enter password to make b
 document.getElementById('wonton').onclick = function(){ //enter password to make box disappear
     var password = prompt("Enter password");
     if (password == "item2") {
-        user2.style.visibility = "hidden";
-        document.getElementById('wonton').innerHTML = "Sold Out";
+        right1.style.visibility = "hidden";
      }
      else{
          window.alert("Wrong password"); 
@@ -217,8 +216,7 @@ document.getElementById('wonton').onclick = function(){ //enter password to make
 document.getElementById('friedrice').onclick = function(){ //enter password to make box disappear
     var password = prompt("Enter password");
     if (password == "item3") {
-        user3.style.visibility = "hidden";
-        document.getElementById('friedrice').innerHTML = "Sold Out";
+        left2.style.visibility = "hidden";
      }
      else{
          window.alert("Wrong password"); 
@@ -227,8 +225,7 @@ document.getElementById('friedrice').onclick = function(){ //enter password to m
 document.getElementById('hainam').onclick = function(){ //enter password to make box disappear
     var password = prompt("Enter password");
     if (password == "item4") {
-        user4.style.visibility = "hidden";
-        document.getElementById('hainam').innerHTML = "Sold Out";
+        right2.style.visibility = "hidden";
      }
      else{
          window.alert("Wrong password"); 
@@ -237,8 +234,7 @@ document.getElementById('hainam').onclick = function(){ //enter password to make
 document.getElementById('fishball').onclick = function(){ //enter password to make box disappear
     var password = prompt("Enter password");
     if (password == "item5") {
-        user5.style.visibility = "hidden";
-        document.getElementById('fishball').innerHTML = "Sold Out";
+        left3.style.visibility = "hidden";
      }
      else{
          window.alert("Wrong password"); 
@@ -247,8 +243,7 @@ document.getElementById('fishball').onclick = function(){ //enter password to ma
 document.getElementById('pho').onclick = function(){ //enter password to make box disappear
     var password = prompt("Enter password");
     if (password == "item6") {
-        user6.style.visibility = "hidden";
-        document.getElementById('pho').innerHTML = "Sold Out";
+        right3.style.visibility = "hidden";
      }
      else{
          window.alert("Wrong password"); 
@@ -257,28 +252,26 @@ document.getElementById('pho').onclick = function(){ //enter password to make bo
 title.onclick = function(){ //enter password to make box appear again
     var password = prompt("Enter password");
     if (password == "item1") {
-        user1.style.visibility = "visible";
-        document.getElementById('mapo').innerHTML = mapoName + " - $" + mapo; 
+        left1.style.visibility = "visible";
+        
      }
      if (password == "item2") {
-        user2.style.visibility = "visible";
-        document.getElementById('wonton').innerHTML = mapoName + " - $" + wonton; 
+        right1.style.visibility = "visible";
+        
      }
      if (password == "item3") {
-        user3.style.visibility = "visible";
-        document.getElementById('friedrice').innerHTML = mapoName + " - $" + friedrice; 
+        left2.style.visibility = "visible";
+       
      }
      if (password == "item4") {
-        user4.style.visibility = "visible";
-        document.getElementById('hainam').innerHTML = mapoName + " - $" + haiNam; 
+        right2.style.visibility = "visible";
+        
      }
      if (password == "item5") {
-        user5.style.visibility = "visible";
-        document.getElementById('fishball').innerHTML = mapoName + " - $" + fishball; 
+        left3.style.visibility = "visible";
      }
      if (password == "item6") {
-        user6.style.visibility = "visible";
-        document.getElementById('pho').innerHTML = mapoName + " - $" + pho; 
+        right3.style.visibility = "visible";
      }
      
 }
