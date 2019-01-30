@@ -194,55 +194,29 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
 
         //****create a "maneger secet link" that allows the manipulation of piece or mark the item as Sold Out
         //make the button bigger
-        document.getElementById('mapo').onclick = function () { //enter password to make box disappear
+        bottom.onclick = function () { //enter password to make box disappear
             var password = prompt("Enter password");
             if (password == "item1") {
                 left1.style.visibility = "hidden";
-
-            } else {
-                window.alert("Wrong password");
             }
-        }
-        document.getElementById('wonton').onclick = function () { //enter password to make box disappear
-            var password = prompt("Enter password");
             if (password == "item2") {
                 right1.style.visibility = "hidden";
-            } else {
-                window.alert("Wrong password");
             }
-        }
-        document.getElementById('friedrice').onclick = function () { //enter password to make box disappear
-            var password = prompt("Enter password");
             if (password == "item3") {
                 left2.style.visibility = "hidden";
-            } else {
-                window.alert("Wrong password");
-            }
-        }
-        document.getElementById('hainam').onclick = function () { //enter password to make box disappear
-            var password = prompt("Enter password");
+            } 
+
             if (password == "item4") {
                 right2.style.visibility = "hidden";
-            } else {
-                window.alert("Wrong password");
             }
-        }
-        document.getElementById('fishball').onclick = function () { //enter password to make box disappear
-            var password = prompt("Enter password");
             if (password == "item5") {
                 left3.style.visibility = "hidden";
-            } else {
-                window.alert("Wrong password");
-            }
-        }
-        document.getElementById('pho').onclick = function () { //enter password to make box disappear
-            var password = prompt("Enter password");
+            } 
             if (password == "item6") {
                 right3.style.visibility = "hidden";
-            } else {
-                window.alert("Wrong password");
             }
         }
+      
         title.onclick = function () { //enter password to make box appear again
             var password = prompt("Enter password");
             if (password == "item1") {
