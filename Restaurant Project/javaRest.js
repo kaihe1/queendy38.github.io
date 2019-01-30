@@ -4,8 +4,8 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
         var mydata = JSON.parse(this.responseText); //json will be saved as mydata
         var mapo = mydata.food[0].price; //get price
         var mapoName = mydata.food[0].name; //get name
-      
-      
+
+
 
         var wonton = mydata.food[1].price; //get price
         var wontonName = mydata.food[1].name; //get name
@@ -184,98 +184,92 @@ xmlhttp.onreadystatechange = function () { //i will do this when somthing is mat
                 document.getElementById('user6').value = ""; //claer value
             }
         }
-//show name and price of items
-document.getElementById('mapo').innerHTML = mapoName + " - $" + mapo; 
-document.getElementById('wonton').innerHTML = wontonName + " - $" + wonton;
-document.getElementById('friedrice').innerHTML = friedriceName + " - $" + friedrice;
-document.getElementById('hainam').innerHTML = haiNamName + " - $" + haiNam;
-document.getElementById('fishball').innerHTML = fishballName + " - $" + fishball;
-document.getElementById('pho').innerHTML = phoName + " - $" + pho;
+        //show name and price of items
+        document.getElementById('mapo').innerHTML = mapoName + " - $" + mapo;
+        document.getElementById('wonton').innerHTML = wontonName + " - $" + wonton;
+        document.getElementById('friedrice').innerHTML = friedriceName + " - $" + friedrice;
+        document.getElementById('hainam').innerHTML = haiNamName + " - $" + haiNam;
+        document.getElementById('fishball').innerHTML = fishballName + " - $" + fishball;
+        document.getElementById('pho').innerHTML = phoName + " - $" + pho;
 
-//****create a "maneger secet link" that allows the manipulation of piece or mark the item as Sold Out
-//make the button bigger
-document.getElementById('mapo').onclick = function(){ //enter password to make box disappear
-    var password = prompt("Enter password");
-    if (password == "item1") {
-        left1.style.visibility = "hidden";
-        
-     }
-     else{
-         window.alert("Wrong password"); 
-     }
-}
-document.getElementById('wonton').onclick = function(){ //enter password to make box disappear
-    var password = prompt("Enter password");
-    if (password == "item2") {
-        right1.style.visibility = "hidden";
-     }
-     else{
-         window.alert("Wrong password"); 
-     }
-}
-document.getElementById('friedrice').onclick = function(){ //enter password to make box disappear
-    var password = prompt("Enter password");
-    if (password == "item3") {
-        left2.style.visibility = "hidden";
-     }
-     else{
-         window.alert("Wrong password"); 
-     }
-}
-document.getElementById('hainam').onclick = function(){ //enter password to make box disappear
-    var password = prompt("Enter password");
-    if (password == "item4") {
-        right2.style.visibility = "hidden";
-     }
-     else{
-         window.alert("Wrong password"); 
-     }
-}
-document.getElementById('fishball').onclick = function(){ //enter password to make box disappear
-    var password = prompt("Enter password");
-    if (password == "item5") {
-        left3.style.visibility = "hidden";
-     }
-     else{
-         window.alert("Wrong password"); 
-     }
-}
-document.getElementById('pho').onclick = function(){ //enter password to make box disappear
-    var password = prompt("Enter password");
-    if (password == "item6") {
-        right3.style.visibility = "hidden";
-     }
-     else{
-         window.alert("Wrong password"); 
-     }
-}
-title.onclick = function(){ //enter password to make box appear again
-    var password = prompt("Enter password");
-    if (password == "item1") {
-        left1.style.visibility = "visible";
-        
-     }
-     if (password == "item2") {
-        right1.style.visibility = "visible";
-        
-     }
-     if (password == "item3") {
-        left2.style.visibility = "visible";
-       
-     }
-     if (password == "item4") {
-        right2.style.visibility = "visible";
-        
-     }
-     if (password == "item5") {
-        left3.style.visibility = "visible";
-     }
-     if (password == "item6") {
-        right3.style.visibility = "visible";
-     }
-     
-}
-//try to make sold out sign
+        //****create a "maneger secet link" that allows the manipulation of piece or mark the item as Sold Out
+        //make the button bigger
+        document.getElementById('mapo').onclick = function () { //enter password to make box disappear
+            var password = prompt("Enter password");
+            if (password == "item1") {
+                left1.style.visibility = "hidden";
+
+            } else {
+                window.alert("Wrong password");
+            }
+        }
+        document.getElementById('wonton').onclick = function () { //enter password to make box disappear
+            var password = prompt("Enter password");
+            if (password == "item2") {
+                right1.style.visibility = "hidden";
+            } else {
+                window.alert("Wrong password");
+            }
+        }
+        document.getElementById('friedrice').onclick = function () { //enter password to make box disappear
+            var password = prompt("Enter password");
+            if (password == "item3") {
+                left2.style.visibility = "hidden";
+            } else {
+                window.alert("Wrong password");
+            }
+        }
+        document.getElementById('hainam').onclick = function () { //enter password to make box disappear
+            var password = prompt("Enter password");
+            if (password == "item4") {
+                right2.style.visibility = "hidden";
+            } else {
+                window.alert("Wrong password");
+            }
+        }
+        document.getElementById('fishball').onclick = function () { //enter password to make box disappear
+            var password = prompt("Enter password");
+            if (password == "item5") {
+                left3.style.visibility = "hidden";
+            } else {
+                window.alert("Wrong password");
+            }
+        }
+        document.getElementById('pho').onclick = function () { //enter password to make box disappear
+            var password = prompt("Enter password");
+            if (password == "item6") {
+                right3.style.visibility = "hidden";
+            } else {
+                window.alert("Wrong password");
+            }
+        }
+        title.onclick = function () { //enter password to make box appear again
+            var password = prompt("Enter password");
+            if (password == "item1") {
+                left1.style.visibility = "visible";
+
+            }
+            if (password == "item2") {
+                right1.style.visibility = "visible";
+
+            }
+            if (password == "item3") {
+                left2.style.visibility = "visible";
+
+            }
+            if (password == "item4") {
+                right2.style.visibility = "visible";
+
+            }
+            if (password == "item5") {
+                left3.style.visibility = "visible";
+            }
+            if (password == "item6") {
+                right3.style.visibility = "visible";
+            }
+
+        }
+        //try to make sold out sign
 
 
 
@@ -356,14 +350,13 @@ right3.onmouseout = function () { //if onmouseout, make input hidden
 function checkout() { //jump to next page
     location.href = "Rest2.html";
 }
-var previous = null; 
+var previous = null;
 var current = null;
-    setInterval(function(){ //auto refresh
-        $.getJSON("json.Rest.json", function(json){
-            current = JSON.stringify(json);
-            if (previous && current && previous!==current){
-                location.reload();
-            }
-        });
-    }, 2000);
-
+setInterval(function () { //auto refresh
+    $.getJSON("json.Rest.json", function (json) {
+        current = JSON.stringify(json);
+        if (previous && current && previous !== current) {
+            location.reload();
+        }
+    });
+}, 2000);
