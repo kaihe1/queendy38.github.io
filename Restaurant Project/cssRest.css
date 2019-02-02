@@ -42,11 +42,11 @@ div {
 
 }
 
-input {
-    width: 20vw;
-    height: 20vh;
-    text-align: center;
-    font-size: 80px;
+select {
+    width:20vw;
+    font-size:3vh;
+   display:block;
+   margin: 0 auto;
 
 
 }
@@ -58,6 +58,7 @@ button {
     font-size: 3vh;
     font-family: 'Times New Roman', Times, serif;
 }
+
 
 #bottom {
     width: 100%;
